@@ -1,0 +1,244 @@
+{
+  "item:0": {
+    "itemId": "0",
+    "itemName": "Ajax",
+    "brand": "Adidas",
+    "image": "ajax_home_21_22",
+    "printColor": "white",
+    "price": "40.00",
+    "currentAmount": "1000",
+    "soldAmount": "0"
+  },
+  "item:1": {
+    "itemId": "1",
+    "itemName": "Arsenal",
+    "brand": "Adidas",
+    "image": "arsenal_home_21_22",
+    "printColor": "white",
+    "price": "30.00",
+    "currentAmount": "2000",
+    "soldAmount": "0"
+  },
+  "item:2": {
+    "itemId": "2",
+    "itemName": "Atletico Madrid",
+    "brand": "Nike",
+    "image": "atletico_home_21_22",
+    "printColor": "white",
+    "price": "50.00",
+    "currentAmount": "1000",
+    "soldAmount": "500"
+  },
+  "item:3": {
+    "itemId": "3",
+    "itemName": "Barcelona",
+    "brand": "Nike",
+    "image": "barca_home_21_22",
+    "printColor": "white",
+    "price": "100.00",
+    "currentAmount": "10000",
+    "soldAmount": "8000"
+  },
+  "item:4": {
+    "itemId": "4",
+    "itemName": "Bayern Munich",
+    "brand": "Adidas",
+    "image": "bayern_home_21_22",
+    "printColor": "white",
+    "price": "99.99",
+    "currentAmount": "10000",
+    "soldAmount": "10000"
+  },
+  "item:5": {
+    "itemId": "5",
+    "itemName": "Borussia Dortmund",
+    "brand": "Puma",
+    "image": "bvb_home_21_22",
+    "printColor": "black",
+    "price": "49.99",
+    "currentAmount": "1000",
+    "soldAmount": "500"
+  },
+  "item:6": {
+    "itemId": "6",
+    "itemName": "Chelsea",
+    "brand": "Nike",
+    "image": "chelsea_home_21_22",
+    "printColor": "white",
+    "price": "50.00",
+    "currentAmount": "10000",
+    "soldAmount": "8000"
+  },
+  "item:7": {
+    "itemId": "7",
+    "itemName": "Inter",
+    "brand": "Nike",
+    "image": "inter_home_21_22",
+    "printColor": "gold",
+    "price": "55.00",
+    "currentAmount": "1000",
+    "soldAmount": "0"
+  },
+  "item:8": {
+    "itemId": "8",
+    "itemName": "Juventus",
+    "brand": "Adidas",
+    "image": "juve_home_21_22",
+    "printColor": "black",
+    "price": "100.00",
+    "currentAmount": "20000",
+    "soldAmount": "10000"
+  },
+  "item:9": {
+    "itemId": "9",
+    "itemName": "Liverpool",
+    "brand": "Nike",
+    "image": "liverpool_home_21_22",
+    "printColor": "white",
+    "price": "30.00",
+    "currentAmount": "1000",
+    "soldAmount": "500"
+  },
+  "item:10": {
+    "itemId": "10",
+    "itemName": "Manchester City",
+    "brand": "Puma",
+    "image": "man_city_home_21_22",
+    "printColor": "white",
+    "price": "100.00",
+    "currentAmount": "10000",
+    "soldAmount": "0"
+  },
+  "item:11": {
+    "itemId": "11",
+    "itemName": "Manchester United",
+    "brand": "Adidas",
+    "image": "man_utd_home_21_22",
+    "printColor": "white",
+    "price": "100.00",
+    "currentAmount": "10000",
+    "soldAmount": "10000"
+  },
+  "item:12": {
+    "itemId": "12",
+    "itemName": "Milan",
+    "brand": "Puma",
+    "image": "milan_home_21_22",
+    "printColor": "white",
+    "price": "30.00",
+    "currentAmount": "1000",
+    "soldAmount": "500"
+  },
+  "item:13": {
+    "itemId": "13",
+    "itemName": "Olympique Marseille",
+    "brand": "Puma",
+    "image": "om_home_21_22",
+    "printColor": "skyblue",
+    "price": "25.90",
+    "currentAmount": "1000",
+    "soldAmount": "50"
+  },
+  "item:14": {
+    "itemId": "14",
+    "itemName": "Paris Saint Germain",
+    "brand": "Nike",
+    "image": "psg_home_21_22",
+    "printColor": "white",
+    "price": "149.90",
+    "currentAmount": "30000",
+    "soldAmount": "50000"
+  },
+  "item:15": {
+    "itemId": "15",
+    "itemName": "RB Leipzig",
+    "brand": "Nike",
+    "image": "rb_leipzig_home_21_22",
+    "printColor": "red",
+    "price": "30.90",
+    "currentAmount": "1000",
+    "soldAmount": "50"
+  },
+  "item:16": {
+    "itemId": "16",
+    "itemName": "Real Madrid",
+    "brand": "Adidas",
+    "image": "real_home_21_22",
+    "printColor": "blue",
+    "price": "100.00",
+    "currentAmount": "10000",
+    "soldAmount": "10000"
+  },
+  "item:17": {
+    "itemId": "17",
+    "itemName": "Tottenham",
+    "brand": "Nike",
+    "image": "tottenham_home_21_22",
+    "printColor": "darkblue",
+    "price": "25.00",
+    "currentAmount": "1000",
+    "soldAmount": "50"
+  },
+  "item:18": {
+    "itemId": "18",
+    "itemName": "West Ham United",
+    "brand": "Umbro",
+    "image": "westham_home_21_22",
+    "printColor": "white",
+    "price": "9.90",
+    "currentAmount": "1000",
+    "soldAmount": "0"
+  },
+  "item:19": {
+    "itemId": "19",
+    "itemName": "Wolfsburg",
+    "brand": "Nike",
+    "image": "wolfsburg_home_21_22",
+    "printColor": "darkblue",
+    "price": "10.00",
+    "currentAmount": "1000",
+    "soldAmount": "0"
+  },
+  "user:d033e22a-e348-5eb5-a60f-c2140aec3585": {
+    "firstName": "admin",
+    "lastName": "admin",
+    "username": "admin",
+    "password": "admin",
+    "transactions": "[]"
+  },
+  "user:e5f60c81-7878-50ef-a8f5-d6de692cfc65": {
+    "firstName": "Itay",
+    "lastName": "Neuberger",
+    "username": "itay",
+    "password": "250894",
+    "transactions": "[]"
+  },
+  "user:6c7ca345-f63f-535c-b353-ff15bd6c5e05": {
+    "firstName": "Itay",
+    "lastName": "Neuberger",
+    "username": "admin1",
+    "password": "250894",
+    "transactions": "[]"
+  },
+  "user:8a0b1e06-5e96-5881-a017-bf7654bc4b15": {
+    "firstName": "Itay",
+    "lastName": "Neuberger",
+    "username": "Itay.Neuberger",
+    "password": "250894",
+    "transactions": "[]"
+  },
+  "user:2f205bf6-69d7-5317-a43f-a936e9cc7c10": {
+    "firstName": "Itay",
+    "lastName": "Neuberger",
+    "username": "itayneusdasd",
+    "password": "123133",
+    "transactions": "[]"
+  },
+  "user:e93b4e3c-464f-5d51-b32f-bd6ded717e9e": {
+    "firstName": "Itay",
+    "lastName": "Neuberger",
+    "username": "aaaaaaa",
+    "password": "aaaaaaaaaaaaaaaaa",
+    "transactions": "[]"
+  }
+}
