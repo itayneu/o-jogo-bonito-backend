@@ -6,8 +6,8 @@
     "image": "ajax_home_21_22",
     "printColor": "white",
     "price": "40.00",
-    "currentAmount": "1000",
-    "soldAmount": "0"
+    "currentAmount": 996,
+    "soldAmount": 104
   },
   "item:1": {
     "itemId": "1",
@@ -15,9 +15,9 @@
     "brand": "Adidas",
     "image": "arsenal_home_21_22",
     "printColor": "white",
-    "price": "30.00",
-    "currentAmount": "2000",
-    "soldAmount": "0"
+    "price": "34.98",
+    "currentAmount": 9999,
+    "soldAmount": 501
   },
   "item:2": {
     "itemId": "2",
@@ -26,8 +26,8 @@
     "image": "atletico_home_21_22",
     "printColor": "white",
     "price": "50.00",
-    "currentAmount": "1000",
-    "soldAmount": "500"
+    "currentAmount": 992,
+    "soldAmount": 508
   },
   "item:3": {
     "itemId": "3",
@@ -36,8 +36,8 @@
     "image": "barca_home_21_22",
     "printColor": "white",
     "price": "100.00",
-    "currentAmount": "10000",
-    "soldAmount": "8000"
+    "currentAmount": 0,
+    "soldAmount": 8000
   },
   "item:4": {
     "itemId": "4",
@@ -46,8 +46,8 @@
     "image": "bayern_home_21_22",
     "printColor": "white",
     "price": "99.99",
-    "currentAmount": "10000",
-    "soldAmount": "10000"
+    "currentAmount": 1,
+    "soldAmount": 99999
   },
   "item:5": {
     "itemId": "5",
@@ -56,8 +56,8 @@
     "image": "bvb_home_21_22",
     "printColor": "black",
     "price": "49.99",
-    "currentAmount": "1000",
-    "soldAmount": "500"
+    "currentAmount": 999,
+    "soldAmount": 501
   },
   "item:6": {
     "itemId": "6",
@@ -66,8 +66,8 @@
     "image": "chelsea_home_21_22",
     "printColor": "white",
     "price": "50.00",
-    "currentAmount": "10000",
-    "soldAmount": "8000"
+    "currentAmount": 9999,
+    "soldAmount": 8001
   },
   "item:7": {
     "itemId": "7",
@@ -75,9 +75,9 @@
     "brand": "Nike",
     "image": "inter_home_21_22",
     "printColor": "gold",
-    "price": "55.00",
-    "currentAmount": "1000",
-    "soldAmount": "0"
+    "price": "55.80",
+    "currentAmount": 1000,
+    "soldAmount": 0
   },
   "item:8": {
     "itemId": "8",
@@ -86,8 +86,8 @@
     "image": "juve_home_21_22",
     "printColor": "black",
     "price": "100.00",
-    "currentAmount": "20000",
-    "soldAmount": "10000"
+    "currentAmount": 20000,
+    "soldAmount": 10000
   },
   "item:9": {
     "itemId": "9",
@@ -96,8 +96,8 @@
     "image": "liverpool_home_21_22",
     "printColor": "white",
     "price": "30.00",
-    "currentAmount": "1000",
-    "soldAmount": "500"
+    "currentAmount": 1000,
+    "soldAmount": 500
   },
   "item:10": {
     "itemId": "10",
@@ -106,7 +106,7 @@
     "image": "man_city_home_21_22",
     "printColor": "white",
     "price": "100.00",
-    "currentAmount": "10000",
+    "currentAmount": 10000,
     "soldAmount": "0"
   },
   "item:11": {
@@ -115,9 +115,9 @@
     "brand": "Adidas",
     "image": "man_utd_home_21_22",
     "printColor": "white",
-    "price": "100.00",
-    "currentAmount": "10000",
-    "soldAmount": "10000"
+    "price": "150.00",
+    "currentAmount": 10,
+    "soldAmount": 10000
   },
   "item:12": {
     "itemId": "12",
@@ -126,8 +126,8 @@
     "image": "milan_home_21_22",
     "printColor": "white",
     "price": "30.00",
-    "currentAmount": "1000",
-    "soldAmount": "500"
+    "currentAmount": 1000,
+    "soldAmount": 500
   },
   "item:13": {
     "itemId": "13",
@@ -136,8 +136,8 @@
     "image": "om_home_21_22",
     "printColor": "skyblue",
     "price": "25.90",
-    "currentAmount": "1000",
-    "soldAmount": "50"
+    "currentAmount": 1000,
+    "soldAmount": 50
   },
   "item:14": {
     "itemId": "14",
@@ -146,8 +146,8 @@
     "image": "psg_home_21_22",
     "printColor": "white",
     "price": "149.90",
-    "currentAmount": "30000",
-    "soldAmount": "50000"
+    "currentAmount": 30000,
+    "soldAmount": 50000
   },
   "item:15": {
     "itemId": "15",
@@ -156,8 +156,8 @@
     "image": "rb_leipzig_home_21_22",
     "printColor": "red",
     "price": "30.90",
-    "currentAmount": "1000",
-    "soldAmount": "50"
+    "currentAmount": 1000,
+    "soldAmount": 50
   },
   "item:16": {
     "itemId": "16",
@@ -166,8 +166,8 @@
     "image": "real_home_21_22",
     "printColor": "blue",
     "price": "100.00",
-    "currentAmount": "10000",
-    "soldAmount": "10000"
+    "currentAmount": 9999,
+    "soldAmount": 10001
   },
   "item:17": {
     "itemId": "17",
@@ -176,8 +176,8 @@
     "image": "tottenham_home_21_22",
     "printColor": "darkblue",
     "price": "25.00",
-    "currentAmount": "1000",
-    "soldAmount": "50"
+    "currentAmount": 1000,
+    "soldAmount": 50
   },
   "item:18": {
     "itemId": "18",
@@ -186,8 +186,8 @@
     "image": "westham_home_21_22",
     "printColor": "white",
     "price": "9.90",
-    "currentAmount": "1000",
-    "soldAmount": "0"
+    "currentAmount": 0,
+    "soldAmount": 0
   },
   "item:19": {
     "itemId": "19",
@@ -196,49 +196,21 @@
     "image": "wolfsburg_home_21_22",
     "printColor": "darkblue",
     "price": "10.00",
-    "currentAmount": "1000",
-    "soldAmount": "0"
+    "currentAmount": 999,
+    "soldAmount": 1
   },
   "user:d033e22a-e348-5eb5-a60f-c2140aec3585": {
     "firstName": "admin",
     "lastName": "admin",
     "username": "admin",
     "password": "admin",
-    "transactions": "[]"
-  },
-  "user:e5f60c81-7878-50ef-a8f5-d6de692cfc65": {
-    "firstName": "Itay",
-    "lastName": "Neuberger",
-    "username": "itay",
-    "password": "250894",
-    "transactions": "[]"
+    "transactions": "[{\"purchases\":[{\"itemId\":\"0\",\"itemName\":\"Ajax\",\"brand\":\"Adidas\",\"image\":\"ajax_home_21_22\",\"printColor\":\"white\",\"price\":\"40.00\",\"currentAmount\":997,\"soldAmount\":103,\"boughtAmount\":1},{\"itemId\":\"1\",\"itemName\":\"Arsenal\",\"brand\":\"Adidas\",\"image\":\"arsenal_home_21_22\",\"printColor\":\"white\",\"price\":\"34.98\",\"currentAmount\":9999,\"soldAmount\":501,\"boughtAmount\":1},{\"itemId\":\"2\",\"itemName\":\"Atletico Madrid\",\"brand\":\"Nike\",\"image\":\"atletico_home_21_22\",\"printColor\":\"white\",\"price\":\"50.00\",\"currentAmount\":992,\"soldAmount\":508,\"boughtAmount\":1}],\"paymentData\":{\"cardHolder\":\"asdsadasd\",\"cardNumber\":\"12312313\",\"expiration\":\"213123\",\"cvv\":\"123123\"},\"date\":\"20:35 31/08/2021\"}]"
   },
   "user:6c7ca345-f63f-535c-b353-ff15bd6c5e05": {
     "firstName": "Itay",
     "lastName": "Neuberger",
     "username": "admin1",
     "password": "250894",
-    "transactions": "[]"
-  },
-  "user:8a0b1e06-5e96-5881-a017-bf7654bc4b15": {
-    "firstName": "Itay",
-    "lastName": "Neuberger",
-    "username": "Itay.Neuberger",
-    "password": "250894",
-    "transactions": "[]"
-  },
-  "user:2f205bf6-69d7-5317-a43f-a936e9cc7c10": {
-    "firstName": "Itay",
-    "lastName": "Neuberger",
-    "username": "itayneusdasd",
-    "password": "123133",
-    "transactions": "[]"
-  },
-  "user:e93b4e3c-464f-5d51-b32f-bd6ded717e9e": {
-    "firstName": "Itay",
-    "lastName": "Neuberger",
-    "username": "aaaaaaa",
-    "password": "aaaaaaaaaaaaaaaaa",
-    "transactions": "[]"
+    "transactions": "[{\"purchases\":[],\"paymentData\":{\"cardHolder\":\"asdasd\",\"cardNumber\":\"asdadasss\",\"expiration\":\"asdasd\",\"cvv\":\"dddd\"},\"date\":\"22:13 31/08/2021\"}]"
   }
 }

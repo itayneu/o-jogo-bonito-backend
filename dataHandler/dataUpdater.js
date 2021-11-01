@@ -1,8 +1,6 @@
 const { createUser, createItem } = require("./dataCreator");
 const { searchUser, searchItem } = require("./dataSearcher");
-const {
-  editTransactionsData,
-} = require("../transactionHandler/transactionUserService");
+const { editTransactionsData } = require("../transactionHandler/transactionUserService");
 
 /**
  * The function gets user username and updates his data

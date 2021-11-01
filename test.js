@@ -1,112 +1,112 @@
-const request = require("supertest");
-const app = require("./app");
+const fetch = require("node-fetch");
 
-describe("Get /users/getall", function () {
-  it("responds with json containing a list of all users", function (done) {
-    request(app)
-      .get("/users/getall")
-      .set("Accept", "application/json")
-      .expect("Content-Type", /json/)
-      .expect(200, done);
-  });
-});
+// Testing users/getall
+fetch('http://localhost:3005/users/getall', {
+    method: "get",
+    headers: {"Content-Type": "application/json"},
+})
+    .then(res => res.json())
+    .then(json  => {
+        if (json[0].username == "admin") console.log("Users: getall = PASSED");
+        else console.log("Users: getall = FAILED");
+    });
 
-describe("POST /users/login", function () {
-  let data = { username: "admin" };
-  it("respond with json containing a single user", function (done) {
-    request(app)
-      .post("/users/login")
-      .send(data)
-      .set("Accept", "application/json")
-      .expect("Content-Type", /json/)
-      .expect(200, done);
-  });
-});
+// Testing users/login with valid user
+fetch('http://localhost:3005/users/login', {
+    method: "post",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ username: "admin" })
+})
+    .then(res => res.json())
+    .then(json  => {
+        if (json.username == "admin") console.log("Users: login with valid user = PASSED");
+        else console.log("Users: login with valid user = FAILED");
+    });
 
-describe("POST /users/login", function () {
-  let data = { username: "notExists" };
-  it("respond with json user not found", function (done) {
-    request(app)
-      .post("/users/login")
-      .send(data)
-      .set("Accept", "application/json")
-      .expect("Content-Type", /json/)
-      .expect(200)
-      .expect(200, done);
-  });
-});
+// Testing users/login with invalid user
+fetch('http://localhost:3005/users/login', {
+    method: "post",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ username: "empty" })
+})
+    .then(res => res.json())
+    .then(json  => {
+        if (json.error) console.log("Users: login with invalid user = PASSED");
+        else console.log("Users: login with invalid user = FAILED");
+    });
 
-describe("Get /items/getall", function () {
-  it("responds with json containing a list of all items", function (done) {
-    request(app)
-      .get("/users/getall")
-      .set("Accept", "application/json")
-      .expect("Content-Type", /json/)
-      .expect(200, done);
-  });
-});
+// Testing items/getall
+fetch('http://localhost:3005/items/getall', {
+    method: "get",
+    headers: {"Content-Type": "application/json"},
+})
+    .then(res => res.json())
+    .then(json  => {
+        if (json[0].itemName == "Ajax") console.log("Items: getall = PASSED");
+        else console.log("Items: getall = FAILED");
+    });
 
-describe("POST /items/searchItem", function () {
-  let data = { itemId: "0" };
-  it("respond with json containing a single item", function (done) {
-    request(app)
-      .post("/items/searchItem")
-      .send(data)
-      .set("Accept", "application/json")
-      .expect("Content-Type", /json/)
-      .expect(200, done);
-  });
-});
+// Testing items/searchItem with valid item
+fetch('http://localhost:3005/items/searchItem', {
+    method: "post",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ itemId: "0" })
+})
+    .then(res => res.json())
+    .then(json  => {
+        if (json.itemName == "Ajax") console.log("Items: seaching valid item = PASSED");
+        else console.log("Items: seaching valid item = FAILED");
+    });
 
-describe("POST /items/searchItem", function () {
-  let data = { itemId: "999" };
-  it("respond with json item not found", function (done) {
-    request(app)
-      .post("/items/searchItem")
-      .send(data)
-      .set("Accept", "application/json")
-      .expect("Content-Type", /json/)
-      .expect(200)
-      .expect(200, done);
-  });
-});
+// Testing items/login with invalid item
+fetch('http://localhost:3005/items/searchItem', {
+    method: "post",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({ itemId: "empty" })
+})
+    .then(res => res.json())
+    .then(json  => {
+        if (json.error) console.log("Items: seaching invalid item = PASSED");
+        else console.log("Items: seaching invalid item = FAILED");
+    });
 
-describe("POST /transactions/newPurchase", function () {
-  let data = {
-    date: "08:08 08/08/2021",
-    username: "admin",
-    paymentData: {
-      cardHolder: "admin admin",
-      cardNumber: "111111111111",
-      expiration: "0921",
-      cvv: "100",
-    },
-    purchases: [
-      {
-        itemId: "0",
-        itemName: "Ajax",
-        currentAmount: "1000",
-        soldAmount: "60",
-        price: "42.00",
-        boughtAmount: "10",
-      },
-      {
-        itemId: "1",
-        itemName: "Arsenal",
-        currentAmount: "1000",
-        soldAmount: "8",
-        price: "34.98",
-        boughtAmount: "5",
-      },
-    ],
-  };
-  it("respond with answer for transactions", function (done) {
-    request(app)
-      .post("/transactions/newPurchase")
-      .send(data)
-      .set("Accept", "application/json")
-      .expect("Content-Type", /json/)
-      .expect(200)
-      .expect(200, done);
-  });
-});
+// Testing /transactions/newPurchase
+fetch('http://localhost:3005/transactions/newPurchase', {
+    method: "post",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(
+    {
+        date: "08:08 08/08/2021",
+        username: "admin",
+        paymentData: {
+          cardHolder: "admin admin",
+          cardNumber: "111111111111",
+          expiration: "0921",
+          cvv: "100",
+        },
+        purchases: [
+          {
+            itemId: "0",
+            itemName: "Ajax",
+            currentAmount: 1000,
+            soldAmount: 60,
+            price: 40.00,
+            boughtAmount: 10,
+          },
+          {
+            itemId: "1",
+            itemName: "Arsenal",
+            currentAmount: "1000",
+            soldAmount: "9",
+            price: "34.98",
+            boughtAmount: "5",
+          },
+        ],
+      }
+    )
+})
+    .then(res => res.json())
+    .then(json  => {
+        if (json) console.log("Transaction: new purchase = PASSED");
+        else console.log("Transaction: new purchase = FAILED");
+    });

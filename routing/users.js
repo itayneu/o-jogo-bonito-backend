@@ -4,10 +4,7 @@ const Ddos = require("ddos");
 const ddos = new Ddos({ burst: 10, limit: 150 });
 const { createUser } = require("../dataHandler/dataCreator");
 const { searchUser, searchAllUsers } = require("../dataHandler/dataSearcher");
-const {
-  setEmptyTransactionsArray,
-  updateUserJSONPasswordData,
-} = require("../services/updateJsonData");
+const { setEmptyTransactionsArray, updateUserJSONPasswordData } = require("../services/updateJsonData");
 const cors = require("cors");
 
 //protect against ddos attack

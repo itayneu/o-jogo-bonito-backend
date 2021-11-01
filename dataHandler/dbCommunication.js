@@ -1,15 +1,11 @@
 const fs = require("fs");
 let db = {};
 
-// Read DB file
 if (fs.existsSync('db.json')) {
-  // Read the file
-  console.log('loading DB');
+  console.log('Loading DB');
   const txt = fs.readFileSync('./db.json', 'utf8');
-  // Parse it  back to object
   db = JSON.parse(txt);
 } else {
-  // Otherwise start with blank list
   console.log('DB does not exist');
 }
 
@@ -20,29 +16,20 @@ if (fs.existsSync('db.json')) {
  */
 async function createInDB(id, dataToStore, callback) {
   return new Promise((resolve, reject) => {
-    // Put it in the object
-    //if (db.hasOwnProperty(id)) {
-      //reject("Already exists");
-    //}
-    //else {
-      db[id] = dataToStore;
+    db[id] = dataToStore;
 
-      // Let the request know it's all set
-      const reply = {
-        status: 'success',
-        id: id,
-        dataToStore: dataToStore
-      }
-      console.log('adding: ' + JSON.stringify(reply));
+    const reply = {
+      status: 'success',
+      id: id,
+      dataToStore: dataToStore
+    }
+    console.log('adding: ' + JSON.stringify(reply));
 
-      // Write a file each time we get a new word
-      // This is kind of silly but it works
-      const json = JSON.stringify(db, null, 2);
-      fs.writeFile('./db.json', json, 'utf8', function (err, obj) {
-        if (err) reject(err);
-        else resolve(obj);
-      });
-    //}
+    const json = JSON.stringify(db, null, 2);
+    fs.writeFile('./db.json', json, 'utf8', function (err, obj) {
+      if (err) reject(err);
+      else resolve(obj);
+    });
   });
 }
 
@@ -55,26 +42,20 @@ async function createInDB(id, dataToStore, callback) {
 async function searchInDB(id) {
   return new Promise((resolve, reject) => {
     let obj;
+
     for(key in db){
-      console.log("searchInDB: key - " + key);
-      console.log("searchInDB: id - " + id);
       if(key == id) {
-        console.log("searchInDB: Found - " + key);
         obj = db[key];
-        console.log("searchInDB: obj - " + obj);
         resolve(obj);
         break;
       }
     }
     if(obj == null) {
-      console.log("searchInDB: null");
       reject("Could not find in DB searchInDB - " + id);
     }
     else {
-      console.log("searchInDB: yay");
       resolve(res);
     }
-    
   });
 }
 
@@ -96,26 +77,11 @@ async function returnSearch(id) {
  */
 async function getAllKeys(type) {
   return new Promise((resolve, reject) => {
-    console.log("getAllKeys");
     let keys = Object.keys(db).filter(v => v.startsWith(`${type}`));
-    console.log("getAllKeys - keys = " + keys);
-    //res = Object.keys(db).filter(v => v.startsWith(`${type}`));
-    // console.log("");
-    // console.log(db);
-    // console.log("");
-    // console.log(type);
-    // console.log("");
-    // console.log(db["users"]);
-    // console.log("");
-    // console.log(keys);
-    // console.log("");
 
     if (keys.length == 0) {
-      console.log("getAllKeys: nothing");
       reject("Could not find in DB");
     } else {
-      console.log("getAllKeys: something");
-      console.log(keys);
       resolve(keys);
     }
   });
@@ -129,12 +95,9 @@ async function getAllData(type) {
   const keysArray = await getAllKeys(type).then((result) => {
     return result;
   });
-  console.log("keysArray = " + keysArray.map(returnSearch));
   const allData = Promise.all(keysArray.map(returnSearch)).then((dataArray) => {
-    console.log("dataArray = " + dataArray);
     return dataArray;
   });
-  console.log(allData);
   return allData;
 }
 
